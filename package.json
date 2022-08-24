@@ -1,0 +1,38 @@
+{
+  "name": "opinionated-next-docker-template",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env NEXT_DEV=true next dev -p 3010",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint pages components --ext .ts --ext .tsx",
+    "lint:fix": "eslint pages components --fix --ext .ts --ext .tsx"
+  },
+  "dependencies": {
+    "@emotion/react": "11.5.0",
+    "@fontsource/roboto": "4.5.1",
+    "@mantine/core": "^4.1.1",
+    "@mantine/hooks": "^4.1.1",
+    "@mantine/next": "^4.1.1",
+    "next": "^12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tabler-icons-react": "^1.41.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.34",
+    "@typescript-eslint/eslint-plugin": "5.3.0",
+    "@typescript-eslint/parser": "5.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.2",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jsdoc": "37.0.3",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "2.4.1",
+    "typescript": "4.4.4"
+  }
+}

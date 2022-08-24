@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  proxy:
+    image: alexjanke/repo:proxy
+    ports:
+      - 3009:443
+  addresses:
+    image: alexjanke/repo
