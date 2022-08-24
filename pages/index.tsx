@@ -1,9 +1,5 @@
-import {
-  Button,
-} from "@mantine/core";
+import { Button } from "@mantine/core";
 
 export default function Home(): JSX.Element {
-  return (
-    <Button>Content</Button>
-  );
+  return <Button>Content</Button>;
 }

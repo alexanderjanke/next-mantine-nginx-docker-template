@@ -20,10 +20,7 @@ export default function App(props: AppProps): JSX.Element {
     <>
       <Head>
         <title>Page Title</title>
-        <meta
-          name="description"
-          content="Page description"
-        />
+        <meta name="description" content="Page description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ColorSchemeProvider
