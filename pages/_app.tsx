@@ -37,7 +37,7 @@ export default function App(props: AppProps): JSX.Element {
             fixed
             header={
               <Header height={60} p="xs">
-                <Topbar />
+                <div>Topbar</div>
               </Header>
             }
             styles={(theme) => ({
