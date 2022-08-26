@@ -3,6 +3,11 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { useState } from "react";
 
+/**
+ * Main app shell
+ * @param props
+ * @returns
+ */
 export default function App(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
