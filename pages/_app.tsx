@@ -1,10 +1,4 @@
-import {
-  AppShell,
-  ColorScheme,
-  ColorSchemeProvider,
-  Header,
-  MantineProvider,
-} from "@mantine/core";
+import { AppShell, ColorScheme, ColorSchemeProvider, Header, MantineProvider } from "@mantine/core";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { useState } from "react";
@@ -23,15 +17,8 @@ export default function App(props: AppProps): JSX.Element {
         <meta name="description" content="Page description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ColorSchemeProvider
-        colorScheme={colorScheme}
-        toggleColorScheme={toggleColorScheme}
-      >
-        <MantineProvider
-          withGlobalStyles
-          withNormalizeCSS
-          theme={{ colorScheme }}
-        >
+      <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+        <MantineProvider withGlobalStyles withNormalizeCSS theme={{ colorScheme }}>
           <AppShell
             padding="md"
             fixed
@@ -43,9 +30,7 @@ export default function App(props: AppProps): JSX.Element {
             styles={(theme) => ({
               main: {
                 backgroundColor:
-                  theme.colorScheme === "dark"
-                    ? theme.colors.dark[8]
-                    : theme.colors.gray[0],
+                  theme.colorScheme === "dark" ? theme.colors.dark[8] : theme.colors.gray[0],
               },
             })}
           >
