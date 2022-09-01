@@ -10,7 +10,7 @@
     "lint:fix": "eslint pages components --fix --ext .ts --ext .tsx"
   },
   "dependencies": {
-    "@emotion/react": "11.5.0",
+    "@emotion/react": "11.10.4",
     "@fontsource/roboto": "4.5.1",
     "@mantine/core": "^4.1.1",
     "@mantine/hooks": "^4.1.1",
