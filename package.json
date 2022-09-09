@@ -28,7 +28,7 @@
     "@typescript-eslint/parser": "5.36.2",
     "cross-env": "^7.0.3",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5",
+    "eslint-config-next": "12.3.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-jsdoc": "^39.3.6",
     "eslint-plugin-prettier": "4.2.1",
