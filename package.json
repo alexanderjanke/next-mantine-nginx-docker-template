@@ -6,8 +6,8 @@
     "dev": "cross-env NEXT_DEV=true next dev -p 3010",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint pages components --ext .ts --ext .tsx",
-    "lint:fix": "eslint pages components --fix --ext .ts --ext .tsx"
+    "lint": "eslint pages components --ext .ts,.tsx",
+    "lint:fix": "eslint pages components --fix --ext .ts,.tsx"
   },
   "dependencies": {
     "@emotion/react": "11.10.4",
