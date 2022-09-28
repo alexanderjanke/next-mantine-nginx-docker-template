@@ -54,7 +54,6 @@
         "require": {
           "ClassDeclaration": true,
           "FunctionDeclaration": true
-          // MethodDefinition: true, // TODO:
         }
       }
     ]
