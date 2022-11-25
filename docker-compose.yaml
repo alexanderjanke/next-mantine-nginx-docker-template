@@ -5,5 +5,5 @@ services:
     image: alexjanke/repo:proxy
     ports:
       - 3009:443
-  addresses:
+  frontend:
     image: alexjanke/repo
