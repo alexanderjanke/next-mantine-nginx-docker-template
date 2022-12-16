@@ -9,10 +9,11 @@ WORKDIR /app
 COPY . .
 
 # Install app dependencies
-RUN yarn install
+RUN npm i pnpm -g
+RUN pnpm install
 
 # Build app
-RUN yarn build
+RUN pnpm build
 
 #
 # Production stage
@@ -22,12 +23,13 @@ FROM node:current-alpine
 WORKDIR /app
 
 COPY package.json .
-COPY yarn.lock .
+COPY pnpm-lock.yaml .
 COPY public public
 COPY next.config.js next.config.js
 # Nextjs build artifacts from build stage
 COPY --from=builder /app/.next .next
 
-RUN yarn install --production
+RUN npm i pnpm -g
+RUN pnpm install --prod
 
-CMD ["yarn", "start"]
+CMD ["pnpm", "start"]
